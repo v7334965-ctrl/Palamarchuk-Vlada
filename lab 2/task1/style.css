@@ -1,0 +1,48 @@
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.digit {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.line {
+    display: flex;
+    gap: 4px;
+}
+
+.pixel, .empty {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.pixel {
+    background-color: #315b60;
+}
+
+@media (max-width: 420px) {
+    .number { gap: 12px; }
+    .digit, .line { gap: 3px; }
+    .pixel, .empty { width: 18px; height: 18px; }
+}

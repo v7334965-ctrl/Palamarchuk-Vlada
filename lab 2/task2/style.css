@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 15px solid white;
+    color: white;
+    font-size: 14px;
+    min-width: 0;
+}
+
+.red1 { background: #CD5C5C; }
+.red2 { background: #DC143C; }
+.red3 { background: #8B0000; }
+.red4 { background: #FF0000; }
+.pink1 { background: #FFC0CB; }
+.pink2 { background: #FF69B4; }
+.pink3 { background: #C71585; }
+.green1 { background: #ADFF2F; }
+.green2 { background: #00FF00; }
+.green3 { background: #32CD32; }
+.green4 { background: #00FA9A; }
+.green5 { background: #2E8B57; }
+.green6 { background: #006400; }
+.green7 { background: #9ACD32; }
+.green8 { background: #808000; }
+.orange1 { background: #FFA07A; }
+.orange2 { background: #FF4500; }
+.brown1 { background: #BC8F8F; }
+.brown2 { background: #F4A460; }
+.brown3 { background: #D2691E; }
+.brown4 { background: #8B4513; }
+.brown5 { background: #A52A2A; }
+
+.red .block { height: 150px; }
+.red1, .red2, .red3, .red4 { width: 25%; }
+
+.pink { height: 300px; }
+.pink-left {
+    display: flex;
+    flex-direction: column;
+    width: 33.333333%;
+}
+.pink-left .block { height: 150px; }
+.pink3 { width: 66.666667%; height: 300px; }
+
+.green { height: 450px; }
+.green-left, .green-middle, .green-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.green-left { width: 25%; }
+.green-middle, .green-right { width: 37.5%; }
+.green-left .block { width: 100%; height: 225px; }
+.green3 { width: 100%; height: 300px; }
+.green4, .green5 { width: 50%; height: 150px; }
+.green6, .green7 { width: 50%; height: 150px; }
+.green8 { width: 100%; height: 300px; }
+
+.orange { height: 150px; }
+.orange1 { width: 16.666667%; margin-left: 16.666667%; }
+.orange2 { width: 16.666667%; margin-left: 33.333333%; }
+
+.brown { height: 300px; }
+.brown1 { width: 25%; height: 300px; }
+.brown2 { width: 25%; height: 300px; }
+.brown-right { width: 50%; display: flex; flex-wrap: wrap; }
+.brown3, .brown4 { width: 50%; height: 150px; }
+.brown5 { width: 100%; height: 150px; }
+
+@media (max-width: 1199px) {
+    .red1, .red2, .red4 { width: 33.333333%; }
+    .red3 { display: none; }
+
+    .pink { height: 300px; }
+    .pink-left { width: 100%; height: 150px; flex-direction: row; }
+    .pink-left .block { width: 50%; height: 150px; }
+    .pink3 { width: 100%; height: 150px; }
+
+    .green-left, .green-middle, .green-right { display: contents; }
+    .green { height: 450px; }
+    .green .block { height: 150px; }
+    .green1 { width: 25%; order: 1; }
+    .green3 { width: 37.5%; order: 2; }
+    .green4, .green5 { width: 18.75%; }
+    .green4 { order: 3; }
+    .green5 { order: 4; }
+    .green2 { width: 25%; order: 5; }
+    .green6 { width: 18.75%; order: 6; }
+    .green7 { width: 18.75%; order: 7; }
+    .green8 { width: 37.5%; order: 8; }
+
+    .orange1 { width: 33.333333%; margin-left: 8.333333%; }
+    .orange2 { width: 33.333333%; margin-left: 16.666667%; }
+
+    .brown1 { width: 33.333333%; }
+    .brown2 { display: none; }
+    .brown-right { width: 66.666667%; }
+    .brown3, .brown4 { width: 50%; }
+    .brown5 { width: 100%; }
+}
+
+@media (max-width: 767px) {
+    .red1 { width: 66.666667%; }
+    .red4 { width: 33.333333%; }
+    .red2 { display: none; }
+
+    .pink { height: 600px; }
+    .pink-left { height: 300px; }
+    .pink-left .block { height: 300px; }
+    .pink3 { height: 300px; }
+
+    .green { height: 600px; }
+    .green1, .green2, .green8 { display: none; }
+    .green3 { width: 100%; height: 300px !important; order: 1; }
+    .green6, .green7, .green4, .green5 { width: 50%; height: 150px; }
+    .green6 { order: 2; }
+    .green7 { order: 3; }
+    .green4 { order: 4; }
+    .green5 { order: 5; }
+
+    .orange1, .orange2 { width: 50%; margin-left: 0; }
+
+    .brown { height: 900px; }
+    .brown1 { width: 100%; height: 300px; }
+    .brown-right { width: 100%; height: 600px; }
+    .brown3, .brown4 { width: 100%; height: 150px; }
+    .brown5 { width: 100%; height: 300px; }
+}
