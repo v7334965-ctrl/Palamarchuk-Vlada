@@ -1,0 +1,283 @@
+
+<html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="История языка JavaScript, его особенности и примеры кода">
+    <title>JavaScript — история и примеры</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header" id="top">
+        <h1>Язык программирования JavaScript</h1>
+        <p class="subtitle">История создания, особенности и примеры кода</p>
+    </header>
+
+    <main class="page">
+        <nav class="toc" aria-label="Содержание">
+            <h2>Содержание</h2>
+            <ol>
+                <li><a href="#history">История создания</a></li>
+                <li><a href="#overview">Краткий обзор языка</a></li>
+                <li><a href="#examples">Примеры кода</a></li>
+                <li><a href="#elements">Использованные теги и CSS-свойства</a></li>
+                <li><a href="#sources">Источники</a></li>
+            </ol>
+        </nav>
+
+        <article>
+            <section id="history" class="clearfix">
+                <h2>1. История создания</h2>
+
+               <figure class="figure float-left">
+    		<img src="images/brendan.PNG" width="280"
+         	alt="Брендан Айк — создатель JavaScript">
+   	 <figcaption>Рисунок 1 — Брендан Айк</figcaption>
+		</figure>
+
+                <p>
+                    <strong>JavaScript</strong> — язык программирования,
+                    который часто используют при создании сайтов.
+                    Он появился в <time datetime="1995">1995 году</time>
+                    в компании <em>Netscape</em>.
+                    Его разработал Брендан Айк.
+                </p>
+
+                <p>
+                    Сначала язык назывался <i>Mocha</i>, затем LiveScript,
+                    а позднее получил название JavaScript.
+                    Его создавали для того, чтобы веб-страницы
+                    могли реагировать на действия пользователя.
+                </p>
+
+                <p>
+                    В <time datetime="1997">1997 году</time> появился
+                    стандарт ECMAScript. Он описывает основные правила языка.
+                    Сейчас JavaScript развивается и используется
+                    не только в браузерах.
+                </p>
+
+                <figure class="figure figure-center">
+    		<img src="images/logo.PNG" width="420"
+        	alt="Логотипы HTML, CSS и JavaScript">
+   	 	<figcaption>Рисунок 2 — HTML, CSS и JavaScript</figcaption>
+		</figure>
+
+                <aside class="note">
+                    <strong>Важно:</strong> Java и JavaScript —
+                    <u>не один и тот же язык</u>,
+                    несмотря на похожие названия.
+                </aside>
+            </section>
+
+            <section id="overview" class="clearfix">
+                <h2>2. Краткий обзор языка</h2>
+
+                <figure class="figure float-right">
+    		<img src="images/javascript.PNG" width="220"
+         	alt="Логотип JavaScript">
+    		<figcaption>Рисунок 3 — логотип JavaScript</figcaption>
+		</figure>
+
+                <p>
+                    JavaScript позволяет изменять содержимое веб-страниц,
+                    проверять данные в формах и реагировать на действия
+                    пользователя. Для работы с элементами страницы
+                    используется <abbr title="Document Object Model">DOM</abbr>
+                    (объектная модель документа).
+                </p>
+
+                <h3>Что можно делать с помощью JavaScript</h3>
+                <ul>
+                    <li>Изменять текст и элементы страницы.</li>
+                    <li>Показывать сообщения пользователю.</li>
+                    <li>Проверять введённые данные.</li>
+                    <li>Обрабатывать события мыши и клавиатуры.</li>
+                </ul>
+
+                <h3>Где применяется язык</h3>
+                <ul class="image-bullets">
+                    <li>Интерактивные сайты.</li>
+                    <li>Веб-приложения.</li>
+                    <li>Серверные программы с Node.js.</li>
+                </ul>
+
+                <h3>Порядок работы с простым скриптом</h3>
+                <ol>
+                    <li>Создать HTML-страницу.</li>
+                    <li>
+                        Добавить тег <code>&lt;script&gt;</code>
+                        или подключить файл <code>.js</code>.
+                    </li>
+                    <li>Открыть страницу в браузере и проверить результат.</li>
+                </ol>
+
+                <div class="table-wrap">
+                    <table class="t1">
+                        <caption>Таблица 1 — основные понятия JavaScript</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Понятие</th>
+                                <th scope="col">Для чего нужно</th>
+                                <th scope="col">Пример</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Переменная</th>
+                                <td>Хранит данные</td>
+                                <td><code>let age = 19;</code></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Функция</th>
+                                <td>Выполняет действие</td>
+                                <td><code>function hello()</code></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Условие</th>
+                                <td>Проверяет выражение</td>
+                                <td><code>if (age &gt;= 18)</code></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Событие</th>
+                                <td>Реагирует на действие</td>
+                                <td><code>click</code></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="3">
+                                    Основные понятия и примеры их использования
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <blockquote>
+                    JavaScript удобно изучать на небольших примерах,
+                    начиная с переменных, условий и функций.
+                </blockquote>
+            </section>
+
+            <section id="examples">
+                <h2>3. Примеры кода</h2>
+
+                <p>
+                    В примерах разными цветами выделены ключевые слова,
+                    строки, числа и комментарии.
+                </p>
+
+                <h3>Пример 1. Сообщение</h3>
+                <p>
+                    Функция <code>alert()</code> показывает
+                    небольшое окно с текстом.
+                </p>
+
+                <pre class="code-block"><code><span class="tok-comment">// Вывод сообщения</span>
+<span class="tok-keyword">let</span> <span class="tok-name">name</span> = <span class="tok-string">"Влада"</span>;
+<span class="tok-function">alert</span>(<span class="tok-string">"Привет, "</span> + name);</code></pre>
+
+                <h3>Пример 2. Проверка условия</h3>
+                <p>
+                    Оператор <code>if</code> позволяет выполнить
+                    код при определённом условии.
+                </p>
+
+                <pre class="code-block"><code><span class="tok-keyword">let</span> age = <span class="tok-number">19</span>;
+<span class="tok-keyword">if</span> (age &gt;= <span class="tok-number">18</span>) {
+  console.<span class="tok-function">log</span>(<span class="tok-string">"Совершеннолетний"</span>);
+}</code></pre>
+
+                <h3>Пример 3. Функция</h3>
+                <p>
+                    Функция позволяет выполнять определённые действия
+                    и повторно использовать написанный код.
+                </p>
+
+                <pre class="code-block"><code><span class="tok-keyword">function</span> <span class="tok-function">sum</span>(a, b) {
+  <span class="tok-keyword">return</span> a + b;
+}
+console.<span class="tok-function">log</span>(<span class="tok-function">sum</span>(<span class="tok-number">2</span>, <span class="tok-number">3</span>));</code></pre>
+            </section>
+
+            <section id="elements">
+                <h2>4. Использованные теги и CSS-свойства</h2>
+
+                <h3>HTML-теги</h3>
+                <p>
+                    &lt;a&gt;, &lt;abbr&gt;, &lt;article&gt;,
+                    &lt;aside&gt;, &lt;blockquote&gt;, &lt;body&gt;,
+                    &lt;caption&gt;, &lt;code&gt;, &lt;div&gt;,
+                    &lt;em&gt;, &lt;figcaption&gt;, &lt;figure&gt;,
+                    &lt;footer&gt;, &lt;h1&gt;, &lt;h2&gt;,
+                    &lt;h3&gt;, &lt;head&gt;, &lt;header&gt;,
+                    &lt;html&gt;, &lt;i&gt;, &lt;img&gt;,
+                    &lt;li&gt;, &lt;link&gt;, &lt;main&gt;,
+                    &lt;meta&gt;, &lt;nav&gt;, &lt;ol&gt;,
+                    &lt;p&gt;, &lt;pre&gt;, &lt;section&gt;,
+                    &lt;span&gt;, &lt;strong&gt;, &lt;table&gt;,
+                    &lt;tbody&gt;, &lt;td&gt;, &lt;tfoot&gt;,
+                    &lt;th&gt;, &lt;thead&gt;, &lt;time&gt;,
+                    &lt;title&gt;, &lt;tr&gt;, &lt;u&gt;,
+                    &lt;ul&gt;.
+                </p>
+
+          		 <h3>CSS-свойства</h3>
+                <p>
+                    
+	
+		<p>
+   		 background, background-color, border, border-bottom,
+    		border-collapse, border-left, border-radius, box-shadow,
+    		box-sizing, caption-side, clear, color, content, display,
+    		float, font-family, font-size, font-style, font-weight,
+   		 height, letter-spacing, line-height, list-style, margin,
+   		 margin-bottom, margin-left, margin-right, margin-top,
+    		max-width, min-width, object-fit, opacity, outline,
+    		outline-offset, overflow-x, padding, padding-bottom,
+    		padding-left, padding-top, position, scroll-behavior,
+    		tab-size, text-align, text-decoration, text-underline-offset,
+    		transition, vertical-align, white-space, width.
+		</p>
+
+
+                </p>
+            </section>
+
+            <section id="sources">
+                <h2>5. Источники</h2>
+
+                <ul>
+                    <li>
+                        <a href="https://ru.wikipedia.org/wiki/JavaScript"
+                           target="_blank" rel="noopener noreferrer">
+                            Википедия — JavaScript
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript"
+                           target="_blank" rel="noopener noreferrer">
+                            MDN — JavaScript
+                        </a>
+                    </li>
+                    <li>
+                        Учебные материалы по HTML, CSS и JavaScript.
+                    </li>
+                </ul>
+
+                <p>
+                    <a href="#top">Вернуться к началу ↑</a>
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>JavaScript — история создания, особенности и примеры кода</p>
+    </footer>
+</body>
+</html>
