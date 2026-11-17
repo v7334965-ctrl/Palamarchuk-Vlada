@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка на ремонт ноутбука</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Заявка на ремонт ноутбука</h1>
+        <p>Заполните форму, чтобы оставить заявку на ремонт.</p>
+
+        <form action="#" method="post">
+	
+<fieldset>
+    <legend>Контактные данные</legend>
+
+    <div class="form-group">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name"
+               placeholder="Ваше имя" required>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Номер телефона</label>
+        <input type="tel" id="phone" name="phone"
+               placeholder="Номер телефона" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Электронная почта</label>
+        <input type="email" id="email" name="email"
+               placeholder="Электронная почта">
+    </div>
+</fieldset>
+ 	
+<fieldset>
+    <legend>Информация о ноутбуке</legend>
+
+    <div class="form-group">
+        <label for="brand">Производитель</label>
+        <select id="brand" name="brand" required>
+            <option value="">Выберите производителя</option>
+            <option value="asus">ASUS</option>
+            <option value="acer">Acer</option>
+            <option value="lenovo">Lenovo</option>
+            <option value="hp">HP</option>
+            <option value="apple">Apple</option>
+            <option value="other">Другой</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="model">Модель ноутбука</label>
+        <input type="text" id="model" name="model"
+               placeholder="Например, ASUS VivoBook 15">
+    </div>
+
+    <div class="form-group">
+        <label for="problem">Что случилось?</label>
+        <select id="problem" name="problem" required>
+            <option value="">Выберите неисправность</option>
+            <option value="screen">Повреждён экран</option>
+            <option value="power">Не включается</option>
+            <option value="battery">Не держит заряд</option>
+            <option value="keyboard">Не работает клавиатура</option>
+            <option value="slow">Медленно работает</option>
+            <option value="other">Другая проблема</option>
+        </select>
+
+    </div>
+
+    <div class="form-group">
+        <label for="description">Описание проблемы</label>
+        <textarea id="description" name="description"
+                  rows="4"
+                  placeholder="Расскажите подробнее, что произошло"></textarea>
+    </div>
+</fieldset>
+	
+<fieldset>
+    <legend>Детали ремонта</legend>
+
+    <div class="form-group">
+        <label for="date">Удобная дата обращения</label>
+        <input type="date" id="date" name="date" required>
+    </div>
+
+    <div class="form-group">
+        <label for="photo">Фото неисправности</label>
+        <input type="file" id="photo" name="photo"
+               accept="image/*">
+    </div>
+
+    <div class="form-group">
+        <label>Срочность ремонта</label>
+
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="urgency"
+                       value="normal" checked>
+                Обычный ремонт
+            </label>
+
+            <label>
+                <input type="radio" name="urgency"
+                       value="urgent">
+                Срочный ремонт
+            </label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>
+            <input type="checkbox" name="agreement" required>
+            Согласен на обработку персональных данных
+        </label>
+    </div>
+</fieldset>
+
+<button type="submit">Отправить заявку</button>
+
+
+        </form>
+    </main>
+
+</body>
+</html>
